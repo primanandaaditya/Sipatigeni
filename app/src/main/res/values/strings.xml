@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Sipatigeni</string>
+    <string name="title_activity_utama">Sipatigeni</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logout">Logout</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="register">Register</string>
+    <string name="server_url">http://139.255.66.219</string>
+    <string name="context_path">/HConnect/HATC/rest/command</string>
+    <string name="database_name">patigeni.db</string>
+    <string name="database_compress_name">patigeni.zip</string>
+    <string name="radio_kebakaran">Kebakaran</string>
+    <string name="radio_bukan_kebakaran">Bukan kebakaran</string>
+    <string name="radio_ragu">Ragu-ragu</string>
+    <string name="gpsServiceStartError">Check that android.permission.ACCESS_FINE_LOCATION or android.permission.ACCESS_COARSE_LOCATION are in the manifest and that Google Play Services is enabled.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <array name="tabs">
+        <item>Titik Api</item>
+        <item>Profile</item>
+        <item>Bantuan</item>
+    </array>
+
+    <array name="klik_gambar">
+        <item>Hapus</item>
+    </array>
+
+    <string-array name="spTipeMap">
+        <item>Normal</item>
+        <item>Hibrid</item>
+        <item>Satelit</item>
+        <item>Terrain</item>
+    </string-array>
+    <string name="title_activity_peta_sampah">Map</string>
+
+</resources>

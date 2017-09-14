@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+       <!-- <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbarhome"></include>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/greenSubBar"
+            android:gravity="center|left"
+            android:textColor="@android:color/black"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:paddingLeft="4dp"
+            android:text="PT PT"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_button"
+            android:textColor="@android:color/white"
+            android:text="Sync" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:background="@color/baseGreen1"
+            android:layout_below="@+id/txtCompany"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_refresh"
+
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:textColor="@color/putih"
+        android:background="@drawable/login_button"
+        android:id="@+id/btnMenuUtama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:visibility="gone"
+        android:text="KE Menu Utama" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

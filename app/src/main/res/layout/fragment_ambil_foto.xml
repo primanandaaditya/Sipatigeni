@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trekkon.patigeni.fragment.AmbilFoto">
+
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Klik kamera di bawah untuk mengambil foto lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:src="@mipmap/ic_ambil_foto"
+                    android:id="@+id/gambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/tvLokasi"
+                        android:text="Tampilkan koordinat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:id="@+id/layout_lokasi"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Lat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tvLat"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:text="0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                android:background="@color/grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Long"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <TextView
+                                android:id="@+id/tvLang"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:text="0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <View
+                                android:background="@color/grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:paddingTop="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:id="@+id/btnClear"
+                        android:text="Batal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/grey"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:id="@+id/btnKirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="KIRIM" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

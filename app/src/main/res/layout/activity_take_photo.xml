@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trekkon.patigeni.activities.TakePhoto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:id="@+id/radioApi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:buttonTint="@color/colorAccent"
+                        android:id="@+id/radioKebakaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_kebakaran"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:buttonTint="@color/colorAccent"
+                        android:id="@+id/radioBukanKebakaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_bukan_kebakaran" />
+
+                    <RadioButton
+                        android:buttonTint="@color/colorAccent"
+                        android:id="@+id/radioRagu"
+                        android:text="@string/radio_ragu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+            <GridView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:numColumns="3"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:gravity="center"
+                android:stretchMode="columnWidth" >
+
+            </GridView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"/>
+
+        <Button
+            android:textColor="@color/putih"
+            android:background="@drawable/login_button"
+            android:id="@+id/btnSimpan"
+            android:text="SIMPAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorAccent"
+        android:clickable="true"
+        android:src="@mipmap/ic_fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

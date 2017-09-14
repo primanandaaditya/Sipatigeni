@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey">#e0e0d1</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="green">#56bd39</color>
+    <color name="green1">#1fd631</color>
+    <color name="darkgreen">#129745</color>
+    <color name="baseGreen">#A7EA79</color>
+    <color name="headerGreen">#4EB04C</color>
+    <color name="headerBlue">#013ca6</color>
+
+    <color name="blue_light">#4c71c1</color>
+    <color name="blue_dark">#003CA6</color>
+    <color name="blue_button_pressed">#3D3DF5</color>
+    <color name="blue_button_released">#2929A3</color>
+    <color name="dark_grey">#222222</color>
+    <color name="blue_balance">#00aeef</color>
+    <color name="exlv_bg_color">#ededed</color>
+    <color name="list_child_back_color">#C2C2C2</color>
+    <color name="light_gray">#AFFFFFFF</color>
+    <color name="child_list_blue_pressed">#CCFF99</color>
+    <color name="child_list_blue_released">#CCD1C7</color>
+    <color name="dark_gray_pressed">#373e44</color>
+    <color name="blue_splashscreen_end">#99CCFF</color>
+    <color name="blue_splashscreen_start">#6699FF</color>
+    <color name="edittextloginform">#8EBDE0</color>
+    <color name="edittextloginform3">#CCffffff</color>
+    <color name="homepage">#1e273a</color>
+    <color name="blue_button_pressed1">#2196f3</color>
+    <color name="blue_button_released1">#0d47a1</color>
+    <color name="greenBar">#2B5E2F</color>
+    <color name="greenSubBar">#618D62</color>
+    <color name="baseGreen1">#E1FCD9</color>
+    <color name="greenButtonPressed">#79B668</color>
+    <color name="greenButtonFocused">#259227</color>
+    <color name="greenNotif">#CEEcc8</color>
+</resources>
